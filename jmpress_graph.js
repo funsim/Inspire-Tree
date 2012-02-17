@@ -1,15 +1,18 @@
 $(document).ready(function() {
    var g = new Graph();
     
-   g.addEdge("strawberry", "cherry");
-   g.addEdge("strawberry", "apple");
-   g.addEdge("strawberry", "tomato");
+   g.addEdge("Music", "Editing_course");
+   g.addEdge("Music", "Studio_Apprentice");
+   g.addEdge("Music", "Music_NBQ_L3");
     
-   g.addEdge("tomato", "apple");
-   g.addEdge("tomato", "kiwi");
+   g.addEdge("Music_NBQ_L3", "HND");
+   g.addEdge("Music_NBQ_L3", "Degree");
     
-   g.addEdge("cherry", "apple");
-   g.addEdge("cherry", "kiwi");
+   g.addEdge("Degree", "Label_AIR");
+   g.addEdge("Degree", "Agency");
+   g.addEdge("Degree", "Internship");
+
+   g.addEdge("Internship", "Agency");
     
    var layouter = new Graph.Layout.Spring(g);
    layouter.layout();
