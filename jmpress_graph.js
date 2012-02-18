@@ -45,7 +45,13 @@ $(document).ready(function() {
          links += '<a href="index.html#/' + t.id + '">Next option: ' + t.id + '</a><br>';
        }
      }
-     $("#impress").append("<div id=" + i + " class='step slide' data-x='" + x*nodeDepth[i]*800 + "' data-y='" + y*800 + "' data-scale='1'>" + i + "<br>" + links + "</div>");
+     // A link the directs to the detailed description of this node
+     links += '<a href="index.html#/' + i + '_desc">More information about ' + i + '</a><br>';
+     // A link for the description slide that links back to the main node 
+     desc_back_link = '<a href="index.html#/' + i + '">Get me back to ' + i + '</a><br>';
+     $("#impress").append("<div id='" + i + "' class='step slide' data-x='" + x*800 + "' data-y='" + y*800 + "' data-scale='1'>" + i + "<br>" + links + "</div>");
+     // Also add a description node for detailed information
+     $("#impress").append("<div id='" + i + "_desc' class='step slide' data-x='" + (x*800+900.0/2+50) + "' data-y='" + (y*800+700.0/2-40) + "' data-scale='0.1'>Videos of " + i + "<br>" + desc_back_link+ "</div>");
    }
 
 });
