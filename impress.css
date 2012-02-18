@@ -436,13 +436,9 @@ a:hover {
     height: 700px;
 
     padding: 40px 60px;
-
     font-family: 'Open Sans', Arial, sans-serif;
-
     text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
-
     font-size: 30px;
-
     letter-spacing: -1px;
 }
 
@@ -481,7 +477,7 @@ a:hover {
 }
 
 .leaf {
-    padding: 140px 260px;
+    padding: 120px 120px 120px 230px;
 
     background-image:url('leaf.png');
 
