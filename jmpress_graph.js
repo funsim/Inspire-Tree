@@ -23,24 +23,25 @@ $(document).ready(function() {
      var x=node.layoutPosX;
      var y=node.layoutPosY;
      var edges = node.edges;
-     var links = '' 
+     var next_links = 'Your next steps:<br>' 
      for (e in edges) {
        var s = edges[e].source;
        var t = edges[e].target;
+       var back_link;
        if (t.id == i) {
-         links += '<a href="index.html#/' + s.id + '">Previous option: ' + s.label + '</a><br>';
+         back_link = '<a href="index.html#/' + s.id + '">Get me back to ' + s.label + '</a><br>';
        }
        if (s.id == i) {
-         links += '<a href="index.html#/' + t.id + '">Next option: ' + t.label + '</a><br>';
+         next_links += '<a href="index.html#/' + t.id + '">' + t.label + '</a>, ';
        }
      }
      // A link the directs to the detailed description of this node
-     links += '<a href="index.html#/' + node.id + '_desc">More information about ' + node.label + '</a><br>';
+     var desc_link = '<a href="index.html#/' + node.id + '_desc">Interested? Tell me more!</a><br>';
      // A link for the description slide that links back to the main node 
-     desc_back_link = '<a href="index.html#/' + node.id + '">Get me back to ' + node.label + '</a><br>';
-     $("#impress").append("<div id=" + node.id + " class='step slide leaf' data-x='" + x*800 + "' data-y='" + y*800 + "' data-scale='1'>" + node.label + "<br>" + links + "</div>");
+     $("#impress").append("<div id=" + node.id + " class='step slide leaf' data-x='" + x*800 + "' data-y='" + y*800 + "' data-scale='1'><h1>" + node.label + "</h1><br>" + desc_link + "<br>" + next_links + "<br>" + back_link + "</div>");
      // Also add a description node for detailed information
-     $("#impress").append("<div id='" + node.id + "_desc' class='step slide description' data-exclude='true' data-x='" + (x*800+700.0/2+50) + "' data-y='" + (y*800+600.0/2-40) + "' data-scale='0.1'>Videos of " + node.label + "<br>" + desc_back_link + "</div>");
+     var back_to_node_link = '<a href="index.html#/' + node.id + '">Go back to ' + node.label + '</a><br>';
+     $("#impress").append("<div id='" + node.id + "_desc' class='step slide description' data-exclude='true' data-x='" + (x*800+700.0/2+50) + "' data-y='" + (y*800+600.0/2-40) + "' data-scale='0.1'>Videos of " + node.label + "<br>" + back_to_node_link + "</div>");
    }
 
 });
