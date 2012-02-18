@@ -40,7 +40,7 @@ $(document).ready(function() {
      desc_back_link = '<a href="index.html#/' + node.id + '">Get me back to ' + node.label + '</a><br>';
      $("#impress").append("<div id=" + node.id + " class='step slide leaf' data-x='" + x*800 + "' data-y='" + y*800 + "' data-scale='1'>" + node.label + "<br>" + links + "</div>");
      // Also add a description node for detailed information
-     $("#impress").append("<div id='" + node.id + "_desc' class='step slide description' data-x='" + (x*800+900.0/2+50) + "' data-y='" + (y*800+700.0/2-40) + "' data-scale='0.1'>Videos of " + node.label + "<br>" + desc_back_link + "</div>");
+     $("#impress").append("<div id='" + node.id + "_desc' class='step slide description' data-exclude='true' data-x='" + (x*800+700.0/2+50) + "' data-y='" + (y*800+600.0/2-40) + "' data-scale='0.1'>Videos of " + node.label + "<br>" + desc_back_link + "</div>");
    }
 
 });
