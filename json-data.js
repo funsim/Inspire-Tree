@@ -1,190 +1,228 @@
-var json = {
+﻿var json = {
       id: "start",
       name: "Start",
+      category: "none",
       data: {},
       children: [{
         id: "root1",
         name: "Degree",
+        category: "none",
         data: {},
         children: []
       }, {
         id: "root2",
         name: "Experience",
+        category: "none",
         data: {},
         children: []
       }, {
         id: "root3",
         name: "Contacts",
+        category: "none",
         data: {},
         children: []
       }, {
           id: "music",
-          name: "MUSIC",
+          name: "Music",
+          category: "none",
           data: {},
           children: [{
             id: "m1",
             name: "Music Bus NVQ L3",
-            data: { colour: "a" },
+            category: "education",
+            data: {},
             children: [{
               id: "m1.1",
               name: "HND",
-              data: { colour: "a" },
+              category: "education",
+              data: {},
               children: []
             }, {
               id: "m1.2",
               name: "Degree",
-              data: { colour: "a" },
+              category: "education",
+              data: {},
               children: [{
                 id: "m1.2.1",
                 name: "",
+                category: "none",
                 data: {},
                 children: []
               }, {
                 id: "m1.2.2",
                 name: "",
+                category: "none",
                 data: {},
                 children: []
               }, {
                 id: "m1.2.3",
                 name: "",
+                category: "none",
                 data: {},
                 children: []
               }, {
                 id: "m1.2.4",
                 name: "Label A&R",
-                data: { colour: "c" },
+                category: "proper_job",
+                data: {},
                 children: []
               }, {
                 id: "m1.2.5",
                 name: "Agency",
-                data: { colour: "c" },
+                category: "proper_job",
+                data: {},
                 children: []
               }, {
                 id: "m1.2.6",
                 name: "JNR Product MNG",
-                data: { colour: "c" },
+                category: "proper_job",
+                data: {},
                 children: []
               }, {
                 id: "m1.2.7",
                 name: "Internship",
-                data: { colour: "b" },
+                category: "apprentice",
+                data: {},
                 children: []
               }]
             }]
           }, {
             id: "m2",
             name: "Studio Apprentice",
-            data: { colour: "b" },
+            category: "apprentice",
+            data: {},
             children: [/*{
               id: "m1.2.6",
               name: "JNR Product MNG",
-              data: { colour: "c" },
+              category: "proper_job",
+              data: {},
               children: []
             }*/]
           }, {
             id: "m3",
             name: "HNV Assistant",
-            data: { colour: "c" },
+            category: "proper_job",
+            data: {},
             children: [{
               id: "m3.1",
               name: "Manager Retail",
-              data: { colour: "c" },
+              category: "proper_job",
+              data: {},
               children: []
             }, {
               id: "m3.2",
               name: "Promotion (Events)",
-              data: { colour: "c" },
+              category: "proper_job",
+              data: {},
               children: []
             }]
           }, {
             id: "m4",
             name: "Editing Course BTEC",
-            data: { colour: "a" },
+            category: "education",
+            data: {},
             children: [{
               id: "m4.1",
               name: "Level 2 Course",
               data: { coulour: "a" },
+              data: {},
               children: []
             }, {
               id: "m4.2",
               name: "Editor JNR",
               data: { coulour: "c" },
+              data: {},
               children: []
             }]
           }, {
             id: "m5",
             name: "Action on Hearing Loss",
-            data: { colour: "b" },
+            category: "apprentice",
+            data: {},
             children: []
           }]
       }, {
           id: "basketball",
-          name: "BASKETBALL",
+          name: "Basketball",
+          category: "none",
           data: {},
           children: [{
             id: "b1",
             name: "Teacher Training (PE)",
-            data: { colour: "a" },
+            category: "education",
+            data: {},
             children: []
           }, {
             id: "b2",
             name: "Volunteering",
-            data: { colour: "b" },
+            category: "apprentice",
+            data: {},
             children: []
           }, {
             id: "b3",
             name: "Community Coach",
-            data: { colour: "b" },
+            category: "apprentice",
+            data: {},
             children: []
           }]
       }, {
           id: "aviation",
-          name: "AVIATION",
+          name: "Aviation",
+          category: "none",
           data: {},
           children: [{
             id: "a1",
             name: "Army",
-            data: { colour: "c" },
+            category: "proper_job",
+            data: {},
             children: []
           }, {
             id: "a2",
             name: "Air Cadets",
-            data: { colour: "b" },
+            category: "apprentice",
+            data: {},
             children: [{
               id: "a2.1",
               name: "Flying Scholarship",
-              data: { colour: "a" },
+              category: "education",
+              data: {},
               children: [{
                 id: "a2.1.1",
                 name: "Commercial Pilot License",
-                data: { colour: "a" },
+                category: "education",
+                data: {},
                 children: []
               }, {
                 id: "a2.1.2",
                 name: "Apprentice Airline",
-                data: { colour: "c" },
+                category: "proper_job",
+                data: {},
                 children: []
               }]
             }]
           }, {
             id: "a3",
             name: "Pilot License",
-            data: { colour: "a" },
+            category: "education",
+            data: {},
             children: []
           }, {
             id: "a4",
             name: "RAF",
-            data: { colour: "c" },
+            category: "proper_job",
+            data: {},
             children: [{
               id: "a5.1",
               name: "Engineer",
-              data: { colour: "c" },
+              category: "proper_job",
+              data: {},
               children: []
             }]
           }, {
             id: "a5",
             name: "Engineer",
-            data: { colour: "c" },
+            category: "proper_job",
+            data: {},
             children: []
           }]
       }]
