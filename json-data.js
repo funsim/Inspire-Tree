@@ -124,12 +124,14 @@
             children: [{
               id: "m4.1",
               name: "Level 2 Course",
+              category: "education",
               data: { coulour: "a" },
               data: {},
               children: []
             }, {
               id: "m4.2",
               name: "Editor JNR",
+              category: "education",
               data: { coulour: "c" },
               data: {},
               children: []
