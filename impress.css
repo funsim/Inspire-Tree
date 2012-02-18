@@ -500,6 +500,16 @@ a:hover {
     background-image:url('leaf-grey.png');
 }
 
+#question1 input[type="text"] {
+   font-family: Arial, Sans-Serif;
+   font-size: 60px;
+   margin-bottom: 5px;
+   display: block;
+   padding: 4px;
+   border: solid 1px #85b1de;
+   width: 600px;
+}
+
 /* IMPRESS NOT SUPPORTED STYLES */
 
 .fallback-message {
