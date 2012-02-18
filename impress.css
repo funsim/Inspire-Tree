@@ -434,20 +434,11 @@ a:hover {
 
     padding: 40px 60px;
 
-    border-radius: 10px;
-
-    background-color: white;
-
-    box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
-    border: 1px solid rgba(0, 0, 0, .3);
-
     font-family: 'Open Sans', Arial, sans-serif;
 
-    color: rgb(102, 102, 102);
     text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
 
     font-size: 30px;
-    line-height: 36px;
 
     letter-spacing: -1px;
 }
@@ -464,39 +455,29 @@ a:hover {
     white-space: nowrap;
 }
 
-.slideleaf {
-    display: block;
-
-    width: 900px;
-    height: 700px;
-
-    padding: 140px 260px;
+.description {
+    padding: 40px 60px;
 
     border-radius: 10px;
 
+    background-color: white;
+
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
+    border: 1px solid rgba(0, 0, 0, .3);
+
+    color: rgb(102, 102, 102);
+
+    line-height: 36px;
+}
+
+.leaf {
+    padding: 140px 260px;
+
     background-image:url('leaf.png');
 
-    font-family: 'Open Sans', Arial, sans-serif;
-
     color: rgb(22, 22, 22);
-    text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
 
-    font-size: 30px;
     line-height: 50px;
-
-    letter-spacing: -1px;
-}
-
-.slideleaf q {
-    display: block;
-    font-size: 50px;
-    line-height: 72px;
-
-    margin-top: 100px;
-}
-
-.slideleaf q strong {
-    white-space: nowrap;
 }
 
 /* IMPRESS NOT SUPPORTED STYLES */
