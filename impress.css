@@ -479,11 +479,25 @@ a:hover {
 .leaf {
     padding: 120px 120px 120px 230px;
 
-    background-image:url('leaf.png');
-
     color: rgb(22, 22, 22);
 
     line-height: 50px;
+}
+
+.none {
+    background-image:url('leaf.png');
+}
+
+.education {
+    background-image:url('leaf-yello.png');
+}
+
+.apprentice {
+    background-image:url('leaf-orange.png');
+}
+
+.proper_job {
+    background-image:url('leaf-grey.png');
 }
 
 /* IMPRESS NOT SUPPORTED STYLES */

@@ -2,7 +2,7 @@ function readJSON(graph, node, parent, depth) {
   if (!depth) {
     var depth = 0;
   }
-  graph.addNode(node.id, { label : node.name, parent : parent, depth : depth, data : node.data });
+  graph.addNode(node.id, { label : node.name, parent : parent, depth : depth, category : node.category, data : node.data });
   if (parent) {
     graph.addEdge(parent.id, node.id);
   }
@@ -39,7 +39,7 @@ $(document).ready(function() {
      var desc_link = '<a href="index.html#/' + node.id + '_desc">Interested? Tell me more!</a> ';
      desc_link += back_link + '</br>' 
      // A link for the description slide that links back to the main node 
-     $("#impress").append("<div id=" + node.id + " class='step slide leaf' data-x='" + x*800 + "' data-y='" + y*800 + "' data-scale='1'><h1><b>" + node.label + "</b></h1><br>" + desc_link + "<br>" + next_links + "</div>");
+     $("#impress").append("<div id=" + node.id + " class='step slide leaf " + node.category + "' data-x='" + x*800 + "' data-y='" + y*800 + "' data-scale='1'><h1><b>" + node.label + "</b></h1><br>" + desc_link + "<br>" + next_links + "</div>");
      // Also add a description node for detailed information
      var back_to_node_link = '<a href="index.html#/' + node.id + '">Go back to ' + node.label + '</a><br>';
      $("#impress").append("<div id='" + node.id + "_desc' class='step slide description' data-exclude='true' data-x='" + (x*800+700.0/2+50) + "' data-y='" + (y*800+600.0/2-40) + "' data-scale='0.1'>Videos of " + node.label + "<br>" + back_to_node_link + "</div>");
