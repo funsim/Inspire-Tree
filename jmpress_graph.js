@@ -45,7 +45,7 @@ $(document).ready(function() {
          links += '<a href="index.html#/' + t.id + '">Next option: ' + t.id + '</a><br>';
        }
      }
-     $("#impress").append("<div id=" + i + " class='step slide' data-x='" + x*((maxDepth-nodeDepth[i])/maxDepth)*800 + "' data-y='" + y*((maxDepth-nodeDepth[i])/maxDepth)*800 + "' data-scale='" + (maxDepth-parseFloat(nodeDepth[i])/2)/maxDepth + "'>" + i + "<br>" + links + "</div>");
+     $("#impress").append("<div id=" + i + " class='step slide' data-x='" + x*nodeDepth[i]*800 + "' data-y='" + y*800 + "' data-scale='1'>" + i + "<br>" + links + "</div>");
    }
 
 });
